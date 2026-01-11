@@ -24,7 +24,7 @@ export const useDeepStreamDataMock = () => {
 
   const vel = useRef({ x: 2, y: 2 });
   const lastUpdate = useRef(Date.now());
-  const raf = useRef<number>();
+  const raf = useRef<number | undefined>(undefined);
 
   const tick = () => {
     const now = Date.now();

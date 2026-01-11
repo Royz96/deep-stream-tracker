@@ -7,7 +7,7 @@ interface MetadataPanelProps {
   tempHistory: number[];
 }
 
-export const MetadataPanel = memo(({ data, isRunning, tempHistory }: MetadataPanelProps) => {
+export const MetadataPanel = memo(({ data, isRunning }: MetadataPanelProps) => {
   return (
     <div className="bg-gray-800 border border-gray-700 rounded p-4 space-y-4">
       <h2 className="text-lg font-semibold text-gray-100">Metrics</h2>
